@@ -5,4 +5,5 @@
 
 ### Progress
 - ✅ Day 01: PHP Basics & Syntax  
+- ✅ Day 02: Variables, Constants, and Operators  
 
