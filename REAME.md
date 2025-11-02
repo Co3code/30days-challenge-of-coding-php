@@ -8,3 +8,4 @@
 - ✅ Day 02: Variables, Constants, and Operators  
 - ✅ Day 03: Conditionals and Logic  
 - ✅ Day 04: Loops (for, while, foreach) 
+- ✅ Day 05: Functions and Reusable Code
