@@ -32,4 +32,7 @@ echo "<hr><h3>Multidimensional Array:</h3>";
 foreach ($students as $student) {
     echo $student["name"] . " - " . $student["course"] . " (Year " . $student["year"] . ")<br>";
 }
+//Run it inVSCodeterminal php - S localhost: 8080 - t day06;
 ?>
+
+
