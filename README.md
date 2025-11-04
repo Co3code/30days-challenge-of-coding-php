@@ -10,3 +10,4 @@
 - ✅ Day 04: Loops (for, while, foreach) 
 - ✅ Day 05: Functions and Reusable Code
 - ✅ Day 06: Arrays (Indexed, Associative, Multidimensional)  
+- ✅ Day 07: Array Functions and Manipulation 
