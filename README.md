@@ -11,3 +11,4 @@
 - ✅ Day 05: Functions and Reusable Code
 - ✅ Day 06: Arrays (Indexed, Associative, Multidimensional)  
 - ✅ Day 07: Array Functions and Manipulation 
+- ✅ Day 08: Mini Quiz App (Arrays + Logic + Functions)  
