@@ -12,3 +12,4 @@
 - ✅ Day 06: Arrays (Indexed, Associative, Multidimensional)  
 - ✅ Day 07: Array Functions and Manipulation 
 - ✅ Day 08: Mini Quiz App (Arrays + Logic + Functions)  
+- ✅ Day 09: PHP Form Handling (GET and POST)
