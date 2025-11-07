@@ -13,3 +13,4 @@
 - ✅ Day 07: Array Functions and Manipulation 
 - ✅ Day 08: Mini Quiz App (Arrays + Logic + Functions)  
 - ✅ Day 09: PHP Form Handling (GET and POST)
+- ✅ Day 10: Form Validation and Sanitization  ggit
