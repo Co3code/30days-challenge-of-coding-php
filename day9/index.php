@@ -1,7 +1,7 @@
 <?php
 // Day 9: PHP Form Handling (GET and POST)
 
-// ✅ Check if form is submitted using POST
+//  Check if form is submitted using POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST["name"]);
     $email = htmlspecialchars($_POST["email"]);
@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Email: $email <br>";
 }
 
-// ✅ Check if form is submitted using GET
+//  Check if form is submitted using GET
 if (isset($_GET["color"])) {
     $color = htmlspecialchars($_GET["color"]);
     echo "<h3>Your favorite color (GET): $color</h3>";
