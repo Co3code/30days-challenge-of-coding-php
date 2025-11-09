@@ -1,108 +1,51 @@
-# =====================================================
-# 🌟 PHP 30-Day Challenge Project - .gitignore
-# -----------------------------------------------------
-# This file tells Git which files/folders NOT to track.
-# Helps protect sensitive data and keep your repo clean.
-# =====================================================
+# =====================================
+# PHP 30-Day Challenge - .gitignore
+# =====================================
 
-# ---------------------------
-# ⚙️ 1. Environment & Config
-# ---------------------------
-# Ignore environment files and secret config files
+# Ignore environment files (for future use)
 .env
-.env.*
+*.env
+
+# Ignore PHP configuration or secrets files
 config.php
-config/*.php
-# (Uncomment if you have other private config files)
-# secrets.php
+*.config.php
 
-# ---------------------------
-# 🧩 2. System & OS Files
-# ---------------------------
-# macOS system files
-.DS_Store
-# Windows system files
-Thumbs.db
-# Linux temporary files
-*~
-
-# ---------------------------
-# 🧰 3. IDE / Editor Settings
-# ---------------------------
-# VS Code
-.vscode/
-# PhpStorm / JetBrains IDEs
-.idea/
-# Sublime Text
-*.sublime-workspace
-*.sublime-project
-
-# ---------------------------
-# 🪣 4. Logs / Temporary Files
-# ---------------------------
+# Ignore log files
 *.log
+
+# Ignore temporary files
 *.tmp
-*.bak
-*.swp
-*.swo
-*.cache
+*.temp
 
-# PHP error logs
-php_errors.log
+# Ignore system files
+.DS_Store
+Thumbs.db
 
-# ---------------------------
-# 📁 5. User Uploads / Data Files
-# ---------------------------
-# Ignore any folder where users or scripts might save files
-uploads/
-upload/
-storage/
-data/
-files/
-tmp/
-backup/
+# Ignore IDE/editor folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
 
-# ---------------------------
-# 🧪 6. Dependency / Build Files
-# ---------------------------
-# Composer vendor folder
+# Ignore composer/vendor dependencies if you use Composer in the future
 /vendor/
-composer.lock
 
-# Node (in case you use frontend tools)
-node_modules/
-npm-debug.log
-yarn-debug.log
-yarn-error.log
+# Ignore user-uploaded or generated data files
+# Messages from guestbook apps
+day*/messages.txt
 
-# ---------------------------
-# 🧩 7. Miscellaneous
-# ---------------------------
-# Ignore generated archives or compressed files
-*.zip
-*.tar
-*.gz
-*.rar
+# Any uploads folders inside day folders
+day*/uploads/
 
-# Ignore IDE project files
-*.iml
+# Ignore cache or session files (if any)
+*.cache
+*.session
 
-# ---------------------------
-# 🧑‍💻 8. Project-specific
-# ---------------------------
-# Ignore any test files or scratch folders
-sandbox/
-test/
-tests/
-drafts/
+# Optional: Ignore all backup files
+*.bak
+*.old
+*.orig
 
-# Ignore any day-specific notes
-notes.txt
-*.md (if private notes)
-
-# =====================================================
-# ✅ END OF .gitignore
-# -----------------------------------------------------
-# Safe to commit public PHP code, while keeping sensitive
-# files, logs, and user data private.
-# =====================================================
+# =====================================
+# End of .gitignore
+# =====================================
