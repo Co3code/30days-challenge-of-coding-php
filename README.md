@@ -15,3 +15,4 @@
 - ✅ Day 09: PHP Form Handling (GET and POST)
 - ✅ Day 10: Form Validation and Sanitization  
 - ✅ Day 11: File Handling (Saving Form Data)
+- ✅ Day 12: Reading and Displaying Saved File Data 
