@@ -3,9 +3,18 @@
 <head>
     <title>Day 12 - File Reading</title>
     <style>
-        body { font-family: Arial; padding: 30px; background: #f9f9f9; }
-        a { display: block; margin: 10px 0; color: #007bff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        body {
+             font-family: Arial;
+              padding: 30px;
+               background: #f9f9f9; 
+            }
+        a { display: block;
+             margin: 10px 0; 
+             color: #007bff; 
+             text-decoration: 
+             none; }
+        a:hover { 
+            text-decoration: underline; }
     </style>
 </head>
 <body>
