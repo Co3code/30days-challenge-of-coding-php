@@ -3,9 +3,21 @@
 
     // Handle form submission
     if ($_SERVER["REQUEST_METHOD"] === "POST" && ! empty($_POST["message"])) {
-        $message = trim($_POST["message"]);
+      //&& → Logical AND. Both conditions on its sides must be true for the whole
+       //!empty($_POST["message"]) → Checks if the message input from the form is not empty.     
+      
+      $message = trim($_POST["message"]);
+      // Gets the message from the form and removes extra spaces 
+      // at the start and end so the data saved is clean
         $file    = fopen($filename, "a");
+        //"a" means append mode. any data written to the file will be added to the end of its existing contents
+        //“Open this file to write new data, but don’t erase what’s already inside — just add new text at the end.”
+       
         fwrite($file, $message . PHP_EOL);
+        // fwrite stands for "file write" used to write data into an open file
+        // $file → the file handle (opened by fopen)
+        // $message → the text to save
+        //PHP_EOL → Means “End Of Line”, a special symbol that adds a new line after each message (so they don’t all end up on one line).
         fclose($file);
     }
 ?>
@@ -35,9 +47,16 @@
     <ul>
         <?php
             if (file_exists($filename)) {
+                    // Check if the file actually exists
                 $lines = file($filename, FILE_IGNORE_NEW_LINES);
+                // file() reads the **entire file into an array**
+                // Each line becomes an element in the $lines array
+                // Each line becomes an element in the $lines array
                 foreach ($lines as $line) {
                     if (! empty(trim($line))) {
+                         // trim($line) removes spaces at the start/end
+                         // empty() checks if the line is empty
+                         // !empty(...) → run code only if the line has some content
                         echo "<li>" . htmlspecialchars($line) . "</li>";
                     }
                 }
