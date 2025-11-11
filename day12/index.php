@@ -14,7 +14,8 @@
              text-decoration: 
              none; }
         a:hover { 
-            text-decoration: underline; }
+            text-decoration: underline; 
+        }
     </style>
 </head>
 <body>
