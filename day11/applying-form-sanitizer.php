@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     file_put_contents("submissions.txt", $data, FILE_APPEND);
 
-    echo "<p style='color:green;'>✅ Data saved successfully!</p>";
+    echo "<p style='color:green;'>Data saved successfully!</p>";
 
     echo "<strong>Name:</strong> $name <br>";
     echo "<strong>Email:</strong> $email <br>";
