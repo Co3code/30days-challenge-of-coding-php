@@ -1,46 +1,46 @@
 <?php
-// day14/index.php
+    // day14/index.php
 
-$uploadDir = 'uploads/';
-$message = '';
+    $uploadDir = 'uploads/';
+    $message   = '';
 
-// Create the uploads folder if not exists
-if (!file_exists($uploadDir)) {
-    mkdir($uploadDir, 0777, true);
-}
+    // Create the uploads folder if not exists
+    if (! file_exists($uploadDir)) {
+        mkdir($uploadDir, 0777, true);
+    }
 
-// Check if form submitted
-if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_FILES["file"])) {
-    $fileName = $_FILES["file"]["name"];
-    $fileTmp = $_FILES["file"]["tmp_name"];
-    $fileSize = $_FILES["file"]["size"];
-    $fileError = $_FILES["file"]["error"];
+    // Check if form submitted
+    if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_FILES["file"])) {
+        $fileName  = $_FILES["file"]["name"];
+        $fileTmp   = $_FILES["file"]["tmp_name"];
+        $fileSize  = $_FILES["file"]["size"];
+        $fileError = $_FILES["file"]["error"];
 
-    // Allowed file types
-    $allowedExt = ['jpg', 'jpeg', 'png', 'gif', 'pdf'];
-    $fileExt = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
+        // Allowed file types
+        $allowedExt = ['jpg', 'jpeg', 'png', 'gif', 'pdf'];
+        $fileExt    = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
 
-    // Validate
-    if ($fileError !== 0) {
-        $message = " Error uploading file!";
-    } elseif (!in_array($fileExt, $allowedExt)) {
-        $message = " Only JPG, PNG, GIF, or PDF files allowed!";
-    } elseif ($fileSize > 2 * 1024 * 1024) { // 2MB limit
-        $message = " File too large! Max 2MB.";
-    } else {
-        $newName = uniqid("upload_", true) . "." . $fileExt;
-        $dest = $uploadDir . $newName;
-
-        if (move_uploaded_file($fileTmp, $dest)) {
-            $message = " File uploaded successfully!";
+        // Validate
+        if ($fileError !== 0) {
+            $message = " Error uploading file!";
+        } elseif (! in_array($fileExt, $allowedExt)) {
+            $message = " Only JPG, PNG, GIF, or PDF files allowed!";
+        } elseif ($fileSize > 2 * 1024 * 1024) { // 2MB limit
+            $message = " File too large! Max 2MB.";
         } else {
-            $message = " Failed to move uploaded file.";
+            $newName = uniqid("upload_", true) . "." . $fileExt;
+            $dest    = $uploadDir . $newName;
+
+            if (move_uploaded_file($fileTmp, $dest)) {
+                $message = " File uploaded successfully!";
+            } else {
+                $message = " Failed to move uploaded file.";
+            }
         }
     }
-}
 
-// Get all uploaded files
-$files = array_diff(scandir($uploadDir), ['.', '..']);
+    // Get all uploaded files
+    $files = array_diff(scandir($uploadDir), ['.', '..']);
 ?>
 
 <!DOCTYPE html>
@@ -93,16 +93,16 @@ $files = array_diff(scandir($uploadDir), ['.', '..']);
     </form>
 
     <?php if ($message): ?>
-        <p class="message"><?= $message ?></p>
+        <p class="message"><?php echo $message?></p>
     <?php endif; ?>
 
     <h2>Uploaded Files:</h2>
     <div class="gallery">
         <?php foreach ($files as $f): ?>
             <?php if (preg_match('/\.(jpg|jpeg|png|gif)$/i', $f)): ?>
-                <img src="<?= $uploadDir . $f ?>" alt="Uploaded image">
+                <img src="<?php echo $uploadDir . $f?>" alt="Uploaded image">
             <?php else: ?>
-                <p><a href="<?= $uploadDir . $f ?>" target="_blank"><?= $f ?></a></p>
+                <p><a href="<?php echo $uploadDir . $f?>" target="_blank"><?php echo $f?></a></p>
             <?php endif; ?>
         <?php endforeach; ?>
     </div>
