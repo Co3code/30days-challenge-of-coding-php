@@ -17,7 +17,7 @@
 </head>
 <body>
     <h1>Hello,               <?php echo htmlspecialchars($username); ?>!</h1>
-    <p>Welcome back — this data is stored in your PHP session.</p>
+    <p> this data is stored in your PHP session.</p>
     <a href="logout.php">Logout</a>
 </body>
 </html>

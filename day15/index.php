@@ -23,10 +23,10 @@
     <title>PHP Session Demo</title>
 </head>
 <body>
-    <h1>Welcome to Day 15 – Sessions Basics</h1>
+    <h1>day 15 session basics</h1>
     <form method="POST">
         <label>Enter your name:</label><br>
-        <input type="text" name="username">
+        <input type="text" name="username" required>
         <button type="submit">Start Session</button>
     </form>
 
