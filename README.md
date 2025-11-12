@@ -18,3 +18,4 @@
 - ✅ Day 12: Reading and Displaying Saved File Data 
 - ✅ DAY 13: Guestbook App (Forms + File Handling)  
 - ✅ DAY 14 : File Uploads (Images and Documents) 
+- ✅ DAY 14 : Sessions Basics 
