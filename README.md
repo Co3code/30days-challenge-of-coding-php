@@ -16,6 +16,14 @@
 - ✅ Day 10: Form Validation and Sanitization  
 - ✅ Day 11: File Handling (Saving Form Data)
 - ✅ Day 12: Reading and Displaying Saved File Data 
-- ✅ DAY 13: Guestbook App (Forms + File Handling)  
-- ✅ DAY 14 : File Uploads (Images and Documents) 
-- ✅ DAY 14 : Sessions Basics 
+- ✅ Day 13: Guestbook App (Forms + File Handling)  
+- ✅ Day 14 : File Uploads (Images and Documents) 
+- ✅ Day 15 : Sessions Basics 
+- ✅ Day 16: Login System with Sessions
+
+
+### Notes
+- Each day has its own folder (`day01` to `day16`) with `index.php` or related files.
+- Running locally:  
+```bash
+php -S localhost:8080 
