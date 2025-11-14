@@ -20,6 +20,7 @@
 - ✅ Day 14 : File Uploads (Images and Documents) 
 - ✅ Day 15 : Sessions Basics 
 - ✅ Day 16: Login System with Sessions
+- ✅ Day 17: Advanced Sessions (Flash Messages, Page Counter, User Preferences)
 
 
 ### Notes
