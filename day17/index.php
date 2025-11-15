@@ -41,9 +41,9 @@
     <meta charset="UTF-8">
     <title>Day 17 - Advanced Sessions</title>
 </head>
-
-<body style="background-color:                                                                                                                         <?php echo $theme === 'dark' ? '#222' : '#fff' ?>;
-             color:                                                                             <?php echo $theme === 'dark' ? '#fff' : '#000' ?>;">
+<!-- prettier-ignore -->
+ <body style="background-color:                                <?php echo $theme === 'dark' ? '#222' : '#fff' ?>;
+             color:                    <?php echo $theme === 'dark' ? '#fff' : '#000' ?>;">
 
 <h2>Day 17: Advanced Session Features</h2>
 
