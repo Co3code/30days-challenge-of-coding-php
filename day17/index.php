@@ -30,6 +30,10 @@
     // pick theme or fallback
     $theme = $_SESSION["theme"] ?? "light";
 
+    //this is just testing if the session is working when i refresh the browser
+    // var_dump($_SESSION);
+    // echo "Session ID: " . session_id();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,18 +42,18 @@
     <title>Day 17 - Advanced Sessions</title>
 </head>
 
-<body style="background-color: <?php echo $theme === 'dark' ? '#222' : '#fff'?>;
-             color: <?php echo $theme === 'dark' ? '#fff' : '#000'?>;">
+<body style="background-color:                                                                                                                         <?php echo $theme === 'dark' ? '#222' : '#fff' ?>;
+             color:                                                                             <?php echo $theme === 'dark' ? '#fff' : '#000' ?>;">
 
 <h2>Day 17: Advanced Session Features</h2>
 
 <!-- FLASH MESSAGE -->
 <?php if ($flash): ?>
-    <p style="color: green; font-weight: bold;"><?php echo $flash?></p>
+    <p style="color: green; font-weight: bold;"><?php echo $flash ?></p>
 <?php endif; ?>
 
 <!-- PAGE COUNTER -->
-<p>You have visited this page <strong><?php echo $_SESSION["count"]?></strong> times this session.</p>
+<p>You have visited this page <strong><?php echo $_SESSION["count"] ?></strong> times this session.</p>
 
 <!-- THEME SWITCHER -->
 <p>Choose theme:</p>
@@ -58,7 +62,7 @@
 
 <br><br>
 
-<p>Current theme: <strong><?php echo $theme?></strong></p>
+<p>Current theme: <strong><?php echo $theme ?></strong></p>
 
 </body>
 </html>
