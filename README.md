@@ -21,6 +21,7 @@
 - ✅ Day 15 : Sessions Basics 
 - ✅ Day 16: Login System with Sessions
 - ✅ Day 17: Advanced Sessions (Flash Messages, Page Counter, User Preferences)
+- ✅ Day 19: Editing & Updating Records (File Handling + Rewrite Logic)
 
 
 ### Notes
