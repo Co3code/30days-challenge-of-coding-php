@@ -1,5 +1,6 @@
 <?php
     // Day 19 – Add, Edit, and Update Records (File Handling)
+    // the question mark is called ternary operator. / Think of it like a mini-if-else on one line. makes code Makes code shorte
 
     $file = "records.txt";
 
@@ -43,6 +44,31 @@
         header("Location: index.php");
         exit;
     }
+    // ----------------------------------------------
+    // Step 5: Delete a record
+    // ----------------------------------------------
+    if (isset($_GET["delete"])) {
+
+        $delete_index = (int) $_GET["delete"]; // convert to number
+
+        // Check if valid index to avoid errors
+        if ($delete_index >= 0 && $delete_index < count($records)) {
+
+            // Remove item from array
+            unset($records[$delete_index]);
+
+            // Re-index array (so the indexes become 0,1,2...)
+            $records = array_values($records);
+
+            // Save the updated list back into the text file
+            file_put_contents($file, implode("\n", $records));
+        }
+
+        // Redirect back to main page (prevents deleting again on refresh)
+        header("Location: index.php");
+        exit;
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -60,6 +86,7 @@
         <li>
             <?php echo htmlspecialchars($r); ?>
             <a href="?edit=<?php echo $i; ?>">Edit</a>
+            <a href="?delete=<?php echo $i ?>"style="color:red;">Delete</a>
         </li>
     <?php endforeach; ?>
 </ul>
