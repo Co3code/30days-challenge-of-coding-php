@@ -46,6 +46,10 @@ day*/uploads/
 *.old
 *.orig
 
+# Ignore all records or data files created during exercises
+day*/records.txt
+
+
 # =====================================
 # End of .gitignore
 # =====================================
