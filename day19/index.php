@@ -109,9 +109,8 @@
     <form method="POST">
         <input type="hidden" name="update_index" value="<?php echo $edit_index; ?>">
 
-        <textarea name="updated_text" rows="3" cols="40" required><?php
-                                                                  echo htmlspecialchars($record_to_edit);
-                                                                  ?></textarea>
+        <textarea name="updated_text" rows="3" cols="40" required><?php echo htmlspecialchars($record_to_edit);  ?></textarea>
+                                                                                                                                 
         <br><br>
 
         <button type="submit">Save Changes</button>
