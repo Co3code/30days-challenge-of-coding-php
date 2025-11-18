@@ -24,7 +24,7 @@
 - ✅ Day 18: Secure Login
 - ✅ Day 19: Editing & Updating Records (File Handling + Rewrite Logic)
 - ✅ Day 20: Deleting Records (File Handling + Rewrite Logic)
-
+- ✅ Day 22: DAY 21: COOKIES BASICS
 
 ### Notes
 - Each day has its own folder (`day01` to `day16`) with `index.php` or related files.
