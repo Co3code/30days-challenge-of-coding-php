@@ -28,7 +28,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Day 21 - Cookies Basics</title>
+    <title>Cookies Basics</title>
 </head>
 <body>
 
