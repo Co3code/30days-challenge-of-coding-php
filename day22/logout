@@ -1,0 +1,9 @@
+<?php
+session_start();
+session_destroy();
+
+//remove cookie
+setcookie("remember_me", "", time() - 3600, "/");
+
+header("location:login.php");
+exit();
