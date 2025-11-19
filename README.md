@@ -25,6 +25,7 @@
 - ✅ Day 19: Editing & Updating Records (File Handling + Rewrite Logic)
 - ✅ Day 20: Deleting Records (File Handling + Rewrite Logic)
 - ✅ Day 21: DAY 21: COOKIES BASICS
+- ✅ Day 22: “Remember Me” Login (Sessions + Cookies)
 
 ### Notes
 - Each day has its own folder (`day01` to `day16`) with `index.php` or related files.
