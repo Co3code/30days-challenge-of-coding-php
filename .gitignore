@@ -29,7 +29,11 @@ Thumbs.db
 
 # Ignore composer/vendor dependencies if you use Composer in the future
 /vendor/
+/node_modules/
 
+# Database files (IMPORTANT: prevents your data from uploading)
+*.sqlite
+*.db
 # Ignore user-uploaded or generated data files
 # Messages from guestbook apps
 day*/messages.txt
@@ -49,7 +53,9 @@ day*/uploads/
 # Ignore all records or data files created during exercises
 day*/records.txt
 
-
+# SQL dump files
+*.sql
+*.csv
 # =====================================
 # End of .gitignore
 # =====================================
