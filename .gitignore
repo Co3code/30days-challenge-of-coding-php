@@ -30,6 +30,7 @@ Thumbs.db
 # Ignore composer/vendor dependencies if you use Composer in the future
 /vendor/
 /node_modules/
+day*/composer.phar
 
 # Database files (IMPORTANT: prevents your data from uploading)
 *.sqlite
