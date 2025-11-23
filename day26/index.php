@@ -1,0 +1,26 @@
+<!-- composer require phpmailer/phpmailer -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        <label>Email:</label><br>
+        <input type="email" name="email" required> <br><br>
+
+        <label >Subject:</label><br>
+        <input type="text" name="subject" required><br> <br>
+
+        <label >Message:</label><br>
+        <textarea name="message" rows="5" required></textarea> <br> <br>
+
+        <input type="submit" value="Send Email">
+    </form>
+
+
+
+</body>
+</html>
