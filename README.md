@@ -28,7 +28,8 @@
 - ✅ Day 22: “Remember Me” Login (Sessions + Cookies)
 - ✅ DAY 23: JSON CRUD  
 - ✅ Day 24: JSON Search
-- ✅Day 25: SQLite CRUD (Create, Read, Update, Delete)
+- ✅ Day 25: SQLite CRUD (Create, Read, Update, Delete)
+- ✅ DAY 26: Sending Email with PHPmailer (composer + SMTP)
 ### Notes
 - Each day has its own folder (`day01` to `day16`) with `index.php` or related files.
 - Running locally:  
