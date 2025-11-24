@@ -1,26 +1,23 @@
-<!-- composer require phpmailer/phpmailer -->
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Day 26 – Send Email</title>
 </head>
 <body>
-    <form method="POST">
-        <label>Email:</label><br>
-        <input type="email" name="email" required> <br><br>
+    <h2>Day 26: Sending Email with PHPMailer</h2>
 
-        <label >Subject:</label><br>
-        <input type="text" name="subject" required><br> <br>
+    <form action="send.php" method="POST">
+        <label>Email To:</label><br>
+        <input type="email" name="email" required><br><br>
 
-        <label >Message:</label><br>
-        <textarea name="message" rows="5" required></textarea> <br> <br>
+        <label>Subject:</label><br>
+        <input type="text" name="subject" required><br><br>
 
-        <input type="submit" value="Send Email">
+        <label>Message:</label><br>
+        <textarea name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Send Email</button>
     </form>
-
-
-
 </body>
 </html>
