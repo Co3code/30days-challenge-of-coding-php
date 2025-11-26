@@ -32,6 +32,7 @@
 - ✅ DAY 26: Sending Email with PHPmailer (composer + SMTP)
 - ✅ Day 27: PDO Database Connections + Prepared Statements
 - ✅ Day 28: User Dashboard (Sessions + PDO)
+- ✅ Day 29: 
 ### Notes
 - Each day has its own folder (`day01` to `day16`) with `index.php` or related files.
 - Running locally:  
