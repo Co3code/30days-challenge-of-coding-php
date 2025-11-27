@@ -33,6 +33,7 @@
 - ✅ Day 27: PDO Database Connections + Prepared Statements
 - ✅ Day 28: User Dashboard (Sessions + PDO)
 - ✅ Day 29: 
+- ✅ DAY 30: FINAL PROJECT: Mini Blog System (File-Based)
 ### Notes
 - Each day has its own folder (`day01` to `day16`) with `index.php` or related files.
 - Running locally:  

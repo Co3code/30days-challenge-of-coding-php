@@ -1,4 +1,5 @@
 <?php
+// note i will comeback this code to make changes and make it more appealinh im not done yet 
 $posts = json_decode(file_get_contents("posts.json"), true);
 ?>
 <!DOCTYPE html>
