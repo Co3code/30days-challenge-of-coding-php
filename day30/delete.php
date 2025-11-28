@@ -1,4 +1,8 @@
-<?php
+
+<?php 
+require 'auth.php'; 
+
+
 $posts = json_decode(file_get_contents("posts.json"), true);
 $id = $_GET["id"];
 
