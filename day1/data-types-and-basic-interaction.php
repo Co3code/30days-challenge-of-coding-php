@@ -94,3 +94,21 @@ can u add commit where to delete code here or change so i can spot so i can know
 
         <button type="submit" name="submit">Submit Info</button>
     </form>
+
+
+    <?php
+        echo " <hr><h3>CONTROL STRUCTURES - MAKING DECISION</h3>";
+
+        $temperature = 25;
+        if ($temperature > 30) {
+            echo "it's hot outside";
+        }
+        // IF - ELSE STATEMENT
+        if ($temperature > 30) {
+            echo "🔥 It's hot outside!<br>";
+        } else {
+            echo "😊 Temperature is comfortable<br>";
+        }
+
+    ?>
+
