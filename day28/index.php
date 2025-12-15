@@ -1,5 +1,5 @@
 <?php
-// index.php
+    // index.php
 ?>
 <!DOCTYPE html>
 <html>
