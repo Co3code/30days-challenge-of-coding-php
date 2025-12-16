@@ -18,7 +18,15 @@
     </style>
 </head>
 <body>
+
     <h2>🔐 User Login</h2>
+
+    <?php
+        // Show success message after registration
+        if (isset($_GET['registered'])) {
+            echo "<p style='color:green'>✅ Registration successful! Please log in.</p>";
+        }
+    ?>
 
     <form method="POST" action="process_login.php">
         <div class="form-group">
@@ -35,5 +43,6 @@
     </form>
 
     <p>Don't have an account? <a href="register.php">Register here</a></p>
+
 </body>
 </html>
